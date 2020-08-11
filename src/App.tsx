@@ -1,10 +1,18 @@
 import React from 'react';
-function App() {
+import Route from './router';
+import Nav from './nav'
+import './app.scss'
+export default () => {
   return (
-    <div className="App">
-      hello,ts
+    <div className="app-container">
+      <div className="nav-container">
+        <Nav />
+      </div>
+      <div className="content-container">
+        <Route />
+      </div>
     </div>
   )
 }
 
-export default App;
+
