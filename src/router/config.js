@@ -2,7 +2,7 @@ import Home from '../pages/index'
 import Detail from '../pages/detail'
 export default [
     {
-        path: '/home',
+        path: '/',
         component: Home,
         label: '主页'
     },
