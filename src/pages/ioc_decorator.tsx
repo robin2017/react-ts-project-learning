@@ -1,8 +1,6 @@
 import React from "react";
 
-import { Container, provide } from "injection";
-
- 
+import { Container } from "injection";
 class UserService {
   private userModel: any;
   setUser(uid: string, name: string) {
@@ -20,6 +18,6 @@ export default () => {
   const userService: UserService = container.get("userService"); //3、容器中获取实例
   userService.setUser("123", "robin");
   const user = userService.getUser("123");
-  console.log("得到用户123:", user); //得到用户123: robin
-  return <div className="index">hello,ioc(看控制台)</div>;
+  console.log("得到用户12344444:", user); //得到用户123: robin
+  return <div className="index">hello,ioc装饰器(看控制台)</div>;
 };
