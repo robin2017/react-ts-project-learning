@@ -2,6 +2,7 @@ import Home from '../pages/index'
 import Detail from '../pages/detail'
 import IOC from '../pages/ioc'
 import IOCD from '../pages/ioc_decorator'
+import Inversify from '../pages/inversify'
 export default [
     {
         path: '/',
@@ -22,5 +23,10 @@ export default [
         path: '/ioc-decorator',
         component: IOCD,
         label: 'ioc装饰器'
+    },
+    {
+        path: '/inversify',
+        component: Inversify,
+        label: 'inversify'
     }
 ]
